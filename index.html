@@ -3,12 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sagar Multiservices | Research & Government Support</title>
+    <title>Sagarmultiservices | Research & Support Services</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         .hero-bg {
             background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+        }
+        .tab-btn.active {
+            background-color: #1e3a8a;
+            color: #ffffff;
+            border-color: #1e3a8a;
         }
     </style>
 </head>
@@ -17,23 +22,25 @@
     <!-- Header Navigation Bar -->
     <header class="sticky top-0 z-50 bg-white/95 backdrop-blur shadow-sm border-b border-slate-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-20">
+            <!-- Brand / Logo -->
             <a href="#index" class="flex items-center gap-3">
                 <div class="w-10 h-10 rounded-full bg-blue-900 text-white flex items-center justify-center font-bold text-lg shadow">
                     SM
                 </div>
                 <div>
-                    <span class="text-xl font-bold tracking-tight text-slate-900 block leading-none">SAGAR MULTISERVICES</span>
-                    <span class="text-xs text-amber-600 font-semibold tracking-wider uppercase">Research & Institutional Services</span>
+                    <span class="text-xl font-bold tracking-tight text-slate-900 block leading-none">SAGARMULTISERVICES</span>
+                    <span class="text-xs text-amber-600 font-semibold tracking-wider uppercase">Research & Support Services</span>
                 </div>
             </a>
 
-            <nav class="hidden lg:flex items-center gap-6 text-sm font-medium text-slate-700">
+            <!-- Desktop Navigation Menu -->
+            <nav class="hidden lg:flex items-center gap-5 text-sm font-medium text-slate-700">
                 <a href="#index" class="hover:text-blue-700 transition-colors">Index</a>
                 <a href="#about" class="hover:text-blue-700 transition-colors">About</a>
                 <a href="#research" class="hover:text-blue-700 transition-colors">Research</a>
                 <a href="#services" class="hover:text-blue-700 transition-colors">Services</a>
                 <a href="#rates" class="hover:text-blue-700 transition-colors">Rates & Pricing</a>
-                <a href="#publications" class="hover:text-blue-700 transition-colors">Publications</a>
+                <a href="#portfolio" class="text-blue-900 font-bold hover:text-blue-700 transition-colors">Published Works</a>
                 <a href="#proposal" class="hover:text-blue-700 transition-colors">Proposal</a>
                 <a href="#certifications" class="hover:text-blue-700 transition-colors">Certifications</a>
                 <a href="#collaboration" class="hover:text-blue-700 transition-colors">Collaboration</a>
@@ -50,13 +57,13 @@
                     GeM Registered Seller ID: 4B0Z260014455308 | UDYAM-MH-04-0304633
                 </div>
                 <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight mb-4">
-                    SAGAR MULTISERVICES
+                    SAGARMULTISERVICES
                 </h1>
                 <p class="text-lg sm:text-xl text-slate-300 max-w-3xl mb-6">
-                    Research Assistance | Educational Support Services | Technical Writing | Book Publishing
+                    Research Assistance | Educational Support Services | Content Writing | Book Publishing
                 </p>
                 <div class="flex flex-wrap gap-4 text-xs sm:text-sm text-slate-400 border-t border-slate-700/60 pt-6">
-                    <div><strong class="text-slate-200">SC Micro Enterprise</strong> Registered with Ministry of MSME, Govt. of India</div>
+                    <div><strong class="text-slate-200">Registered Micro Enterprise</strong> Ministry of MSME, Govt. of India</div>
                     <div><strong class="text-slate-200">PAN:</strong> BRYPG2416G</div>
                     <div><strong class="text-slate-200">Framework:</strong> Blank Mind Logical Protocol (BMLP)</div>
                 </div>
@@ -72,7 +79,6 @@
                     <ul class="space-y-2 text-sm text-slate-700">
                         <li><strong>Full Name:</strong> Kakasaheb Dnyandeo Gawali</li>
                         <li><strong>Date of Birth:</strong> 07th May 1984</li>
-                        <li><strong>Social Category:</strong> Scheduled Caste (SC) Entrepreneur</li>
                         <li><strong>Academic Qualifications:</strong>
                             <ul class="list-disc pl-5 mt-1 space-y-1">
                                 <li>M.A. in English Literature (Dr. BAMU, 2008)</li>
@@ -85,7 +91,7 @@
                 <div class="bg-white p-6 rounded-lg border border-slate-200 shadow-sm">
                     <h3 class="text-lg font-semibold text-blue-900 mb-4">Enterprise Overview</h3>
                     <p class="text-sm text-slate-700 leading-relaxed mb-4">
-                        Sagar Multiservices is a sole proprietorship registered Micro Enterprise providing specialized knowledge-based, analytical, writing, and digital training services to government departments, PSUs, and public institutions.
+                        Sagarmultiservices is a sole proprietorship registered Micro Enterprise providing specialized knowledge-based, analytical, writing, and digital training services to government departments, PSUs, and public institutions.
                     </p>
                     <div class="text-xs bg-slate-100 p-3 rounded text-slate-600">
                         Operating Address: Plot No. 45, Survey No. 51, Rajnagar, Mukundwadi, Railway Station Gate 56, Chhatrapati Sambhajinagar (Aurangabad), Maharashtra – 431001
@@ -118,57 +124,41 @@
             </div>
         </section>
 
-        <!-- 4. SERVICES SECTION (Detailed Breakdown) -->
+        <!-- 4. SERVICES SECTION -->
         <section id="services" class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-b border-slate-200">
-            <h2 class="text-2xl font-bold text-slate-900 mb-2">Detailed Services Breakdown</h2>
-            <p class="text-slate-600 mb-8 text-sm">Services aligned with National Industrial Classification (NIC) and GeM Codes</p>
+            <h2 class="text-2xl font-bold text-slate-900 mb-6">GeM Registered Services & NIC Categories</h2>
             
             <div class="grid md:grid-cols-3 gap-6">
-                <!-- Service 1 -->
-                <div class="bg-white p-6 rounded-lg border border-slate-200 shadow-sm">
+                <div class="bg-white p-5 rounded-lg border border-slate-200 shadow-sm">
                     <span class="text-xs font-bold text-amber-600 uppercase">NIC 85499 & 85500</span>
-                    <h3 class="font-bold text-lg text-slate-900 mt-1 mb-3">AI & Digital Literacy Training</h3>
-                    <p class="text-xs text-slate-600 leading-relaxed mb-4">
-                        Customized training sessions designed for government officials, staff, and educational bodies to build competencies in digital governance, AI ethics, and cybersecurity awareness.
-                    </p>
-                    <ul class="text-xs text-slate-700 space-y-2 border-t border-slate-100 pt-3">
-                        <li>• AI Ethics & Responsible Deployment Workshops</li>
-                        <li>• Cyber Awareness & Information Security</li>
-                        <li>• Custom Institutional Curriculum Development</li>
+                    <h3 class="font-bold text-lg text-slate-900 mt-1">Education & Support</h3>
+                    <ul class="text-xs text-slate-600 space-y-2 mt-3">
+                        <li>• AI & Digital Literacy Awareness Workshops (Online / In-Person)</li>
+                        <li>• Learning Material Development for Govt Training Modules</li>
                     </ul>
                 </div>
 
-                <!-- Service 2 -->
-                <div class="bg-white p-6 rounded-lg border border-slate-200 shadow-sm">
+                <div class="bg-white p-5 rounded-lg border border-slate-200 shadow-sm">
                     <span class="text-xs font-bold text-amber-600 uppercase">NIC 90004</span>
-                    <h3 class="font-bold text-lg text-slate-900 mt-1 mb-3">Technical & Policy Writing</h3>
-                    <p class="text-xs text-slate-600 leading-relaxed mb-4">
-                        Professional drafting of institutional documentation, policy frameworks, and bilingual reports tailored for state and central government departments.
-                    </p>
-                    <ul class="text-xs text-slate-700 space-y-2 border-t border-slate-100 pt-3">
-                        <li>• Policy Briefs & Strategic Executive Summaries</li>
-                        <li>• Annual Report Drafting & Documentation</li>
-                        <li>• Bilingual Translation & Technical Drafting (English/Marathi)</li>
+                    <h3 class="font-bold text-lg text-slate-900 mt-1">Technical Writing</h3>
+                    <ul class="text-xs text-slate-600 space-y-2 mt-3">
+                        <li>• Policy briefs, background papers, and technical reporting (Bilingual: English/Marathi)</li>
+                        <li>• Annual Report drafting and institutional documentation</li>
                     </ul>
                 </div>
 
-                <!-- Service 3 -->
-                <div class="bg-white p-6 rounded-lg border border-slate-200 shadow-sm">
+                <div class="bg-white p-5 rounded-lg border border-slate-200 shadow-sm">
                     <span class="text-xs font-bold text-amber-600 uppercase">NIC 58111 & 72200</span>
-                    <h3 class="font-bold text-lg text-slate-900 mt-1 mb-3">Book Publishing & Research</h3>
-                    <p class="text-xs text-slate-600 leading-relaxed mb-4">
-                        End-to-end editorial, formatting, and publication support for institutional papers, public scheme awareness books, and academic research.
-                    </p>
-                    <ul class="text-xs text-slate-700 space-y-2 border-t border-slate-100 pt-3">
-                        <li>• ISBN / DOI Registration & Digital Publishing</li>
-                        <li>• Analytical Research Studies (Social Sciences & Policy)</li>
-                        <li>• Public Scheme Informational Material Design</li>
+                    <h3 class="font-bold text-lg text-slate-900 mt-1">Publishing & Research</h3>
+                    <ul class="text-xs text-slate-600 space-y-2 mt-3">
+                        <li>• Print-ready government scheme brochure preparation</li>
+                        <li>• Social science and AI ethics research report formulation</li>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <!-- NEW: 5. RATES & PRICING SECTION -->
+        <!-- 5. RATES & PRICING SECTION -->
         <section id="rates" class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-b border-slate-200 bg-slate-50">
             <h2 class="text-2xl font-bold text-slate-900 mb-2">Standard Rates & Financial Quotations</h2>
             <p class="text-slate-600 mb-6 text-sm">Indicative rates for GeM portal direct purchase, L1 tenders, and institutional contracts.</p>
@@ -213,46 +203,147 @@
             </div>
 
             <div class="bg-amber-50 border border-amber-200 p-4 rounded-lg text-xs text-amber-800">
-                <strong>Note for Government Procurement Officers:</strong> Final financial terms, GST calculations, and custom project scopes can be negotiated directly on the <strong>Government e-Marketplace (GeM)</strong> portal under Seller ID: <code>4B0Z260014455308</code>.
+                <strong>Note for Procurement Officers:</strong> Final financial terms, GST calculations, and custom project scopes can be negotiated directly on the <strong>Government e-Marketplace (GeM)</strong> portal under Seller ID: <code>4B0Z260014455308</code>.
             </div>
         </section>
 
-        <!-- 6. PUBLICATIONS SECTION -->
-        <section id="publications" class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-b border-slate-200">
-            <h2 class="text-2xl font-bold text-slate-900 mb-6">Published Books & Research Papers</h2>
-            
-            <div class="grid md:grid-cols-2 gap-8">
+        <!-- 6. DEDICATED EDITABLE PUBLISHED WORKS PORTFOLIO -->
+        <section id="portfolio" class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-b border-slate-200">
+            <div class="flex flex-col md:flex-row md:items-center justify-between mb-8 gap-4">
                 <div>
-                    <h3 class="text-lg font-bold text-slate-800 mb-3">Amazon KDP Books</h3>
-                    <ul class="space-y-2 text-xs text-slate-700 bg-white p-4 rounded border border-slate-200">
-                        <li>• <strong>Responsive AI: Blank Mind Logical Protocol</strong> (ASIN: B0H8Z4L163)</li>
-                        <li>• <strong>The Matrix: Artificial Intelligence & Artificial Knowledge — BMLP</strong> (ASIN: B0H18JD971)</li>
-                        <li>• <strong>Hallucination and Bias: Blank Mind Logical Protocol</strong> (ASIN: B0H1D3MRYD)</li>
-                        <li>• <strong>Reinterpretation of Hallucination & Bias</strong> (ISBN: 979-8196216015)</li>
-                        <li>• <strong>The Same "To Be or Not To Be": The Logic</strong> (ASIN: B0H4R5W3X5)</li>
-                        <li>• <strong>The Matured Philosophy of Psychology: BMLP</strong> (ASIN: B0H665L7JM)</li>
-                    </ul>
+                    <h2 class="text-3xl font-extrabold text-slate-900">Published Works & Sample Portfolio</h2>
+                    <p class="text-slate-600 text-sm mt-1">Explore verified published books, DOI research papers, and policy briefs.</p>
+                </div>
+                
+                <!-- Filter Tabs -->
+                <div class="flex flex-wrap gap-2 text-xs font-semibold">
+                    <button onclick="filterPortfolio('all')" id="btn-all" class="tab-btn active px-4 py-2 rounded-md border border-slate-300 transition-all">All Works</button>
+                    <button onclick="filterPortfolio('books')" id="btn-books" class="tab-btn px-4 py-2 rounded-md border border-slate-300 transition-all">Books (Amazon KDP)</button>
+                    <button onclick="filterPortfolio('papers')" id="btn-papers" class="tab-btn px-4 py-2 rounded-md border border-slate-300 transition-all">Research Papers (Zenodo)</button>
+                    <button onclick="filterPortfolio('articles')" id="btn-articles" class="tab-btn px-4 py-2 rounded-md border border-slate-300 transition-all">Articles & Briefs</button>
+                </div>
+            </div>
+
+            <!-- CARDS CONTAINER (EDITABLE) -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6" id="portfolio-grid">
+                
+                <!-- ==================== BOOKS ==================== -->
+                <div class="portfolio-item books bg-white p-6 rounded-lg border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+                    <div>
+                        <div class="flex justify-between items-start mb-3">
+                            <span class="bg-amber-100 text-amber-800 text-[10px] font-bold uppercase px-2 py-0.5 rounded">Amazon KDP Book</span>
+                            <span class="text-[11px] font-mono text-slate-400">ASIN: B0H8Z4L163</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-base mb-2">Responsive AI: Blank Mind Logical Protocol</h3>
+                        <p class="text-slate-600 text-xs mb-4 leading-relaxed">Systematic analysis of responsive artificial intelligence behavior, cognitive alignment, and evaluation logic.</p>
+                    </div>
+                    <a href="https://amazon.com/author/kakasahebgawali" target="_blank" class="inline-flex items-center text-xs font-bold text-blue-900 hover:text-amber-600 transition-colors">
+                        View on Amazon Author Page &rarr;
+                    </a>
                 </div>
 
+                <div class="portfolio-item books bg-white p-6 rounded-lg border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+                    <div>
+                        <div class="flex justify-between items-start mb-3">
+                            <span class="bg-amber-100 text-amber-800 text-[10px] font-bold uppercase px-2 py-0.5 rounded">Amazon KDP Book</span>
+                            <span class="text-[11px] font-mono text-slate-400">ASIN: B0H18JD971</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-base mb-2">The Matrix: Artificial Intelligence & Artificial Knowledge — BMLP</h3>
+                        <p class="text-slate-600 text-xs mb-4 leading-relaxed">Exploring machine-generated knowledge, epistemic structures, and protocol audits.</p>
+                    </div>
+                    <a href="https://amazon.com/author/kakasahebgawali" target="_blank" class="inline-flex items-center text-xs font-bold text-blue-900 hover:text-amber-600 transition-colors">
+                        View on Amazon Author Page &rarr;
+                    </a>
+                </div>
+
+                <div class="portfolio-item books bg-white p-6 rounded-lg border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+                    <div>
+                        <div class="flex justify-between items-start mb-3">
+                            <span class="bg-amber-100 text-amber-800 text-[10px] font-bold uppercase px-2 py-0.5 rounded">Amazon KDP Book</span>
+                            <span class="text-[11px] font-mono text-slate-400">ISBN: 979-8196216015</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-base mb-2">Reinterpretation of Hallucination & Bias: Blank Mind Logical Protocol</h3>
+                        <p class="text-slate-600 text-xs mb-4 leading-relaxed">Re-evaluating large language model hallucinations and structural biases through psychological and logical facts.</p>
+                    </div>
+                    <a href="https://amazon.com/author/kakasahebgawali" target="_blank" class="inline-flex items-center text-xs font-bold text-blue-900 hover:text-amber-600 transition-colors">
+                        View Paperback / Kindle &rarr;
+                    </a>
+                </div>
+
+                <!-- <!-- TO ADD A NEW BOOK IN FUTURE, PASTE CODE BELOW THIS LINE -->
+
+                <!-- ==================== RESEARCH PAPERS ==================== -->
+                <div class="portfolio-item papers bg-white p-6 rounded-lg border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+                    <div>
+                        <div class="flex justify-between items-start mb-3">
+                            <span class="bg-blue-100 text-blue-800 text-[10px] font-bold uppercase px-2 py-0.5 rounded">DOI Zenodo Paper</span>
+                            <span class="text-[11px] font-mono text-slate-400">DOI: 10.5281/zenodo.19414202</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-base mb-2">BMLP: A Comprehensive Analysis of AI Revolution, Structural Lock, and Digital Governance</h3>
+                        <p class="text-slate-600 text-xs mb-4 leading-relaxed">Permanent DOI-registered working paper analyzing structural governance vulnerabilities in automated digital systems.</p>
+                    </div>
+                    <a href="https://doi.org/10.5281/zenodo.19414202" target="_blank" class="inline-flex items-center text-xs font-bold text-blue-900 hover:text-amber-600 transition-colors">
+                        Read on Zenodo / OpenAIRE &rarr;
+                    </a>
+                </div>
+
+                <div class="portfolio-item papers bg-white p-6 rounded-lg border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+                    <div>
+                        <div class="flex justify-between items-start mb-3">
+                            <span class="bg-blue-100 text-blue-800 text-[10px] font-bold uppercase px-2 py-0.5 rounded">DOI Zenodo Paper</span>
+                            <span class="text-[11px] font-mono text-slate-400">DOI: 10.5281/zenodo.19418396</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-base mb-2">Brain vs Mind: Understanding the Neuroscience of Consciousness Through BMLP</h3>
+                        <p class="text-slate-600 text-xs mb-4 leading-relaxed">Interdisciplinary research examining human consciousness vs machine logical frameworks.</p>
+                    </div>
+                    <a href="https://doi.org/10.5281/zenodo.19418396" target="_blank" class="inline-flex items-center text-xs font-bold text-blue-900 hover:text-amber-600 transition-colors">
+                        Read on Zenodo / OpenAIRE &rarr;
+                    </a>
+                </div>
+
+                <!-- <!-- TO ADD A NEW RESEARCH PAPER IN FUTURE, PASTE CODE BELOW THIS LINE -->
+
+                <!-- ==================== ARTICLES ==================== -->
+                <div class="portfolio-item articles bg-white p-6 rounded-lg border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+                    <div>
+                        <div class="flex justify-between items-start mb-3">
+                            <span class="bg-emerald-100 text-emerald-800 text-[10px] font-bold uppercase px-2 py-0.5 rounded">Policy Brief & Article</span>
+                            <span class="text-[11px] font-mono text-slate-400">Bilingual Sample</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-base mb-2">AI Regulation Frameworks — Comparative Analysis for Indian Context</h3>
+                        <p class="text-slate-600 text-xs mb-4 leading-relaxed">Sample policy brief for public administration, assessing global AI governance standards for Indian civic implementation.</p>
+                    </div>
+                    <span class="text-xs font-bold text-slate-500">Available upon request via GeM</span>
+                </div>
+
+                <!-- <!-- TO ADD A NEW ARTICLE IN FUTURE, PASTE CODE BELOW THIS LINE -->
+
+            </div>
+
+            <!-- Author Profiles Footer Banner -->
+            <div class="mt-10 p-6 bg-slate-900 text-white rounded-lg flex flex-col md:flex-row items-center justify-between gap-4">
                 <div>
-                    <h3 class="text-lg font-bold text-slate-800 mb-3">DOI Research Papers (Zenodo)</h3>
-                    <ul class="space-y-2 text-xs text-slate-700 bg-white p-4 rounded border border-slate-200">
-                        <li>• <strong>AI Revolution, Structural Lock, and Digital Governance:</strong> DOI 10.5281/zenodo.19414202</li>
-                        <li>• <strong>Brain vs Mind: Neuroscience of Consciousness Through BMLP:</strong> DOI 10.5281/zenodo.19418396</li>
-                        <li>• <strong>Structural-Chained-Controlled-Governance:</strong> DOI 10.5281/zenodo.19426434</li>
-                        <li>• <strong>The Technology Lock: Jurisdiction of Knowledge:</strong> DOI 10.5281/zenodo.19436417</li>
-                    </ul>
+                    <h4 class="font-bold text-base text-amber-400">Verify Researcher Profiles & Citations</h4>
+                    <p class="text-xs text-slate-300 mt-1">Cross-check publications via ORCID repository and Amazon Author Central.</p>
+                </div>
+                <div class="flex gap-4">
+                    <a href="https://orcid.org/0009-0007-0073-5241" target="_blank" class="px-4 py-2 bg-slate-800 hover:bg-slate-700 text-xs font-semibold rounded border border-slate-700 transition-colors">
+                        ORCID: 0009-0007-0073-5241
+                    </a>
+                    <a href="https://amazon.com/author/kakasahebgawali" target="_blank" class="px-4 py-2 bg-amber-500 hover:bg-amber-400 text-slate-900 text-xs font-bold rounded transition-colors">
+                        Amazon Author Page
+                    </a>
                 </div>
             </div>
         </section>
 
         <!-- 7. PROPOSAL SECTION -->
-        <section id="proposal" class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-b border-slate-200 bg-slate-50">
+        <section id="proposal" class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-b border-slate-200">
             <h2 class="text-2xl font-bold text-slate-900 mb-4">Enterprise Proposal & Terms</h2>
             <div class="bg-white p-6 rounded-lg border border-slate-200 text-sm text-slate-700 space-y-4">
                 <h3 class="font-bold text-slate-900 text-base">Standard GeM Procurement Framework</h3>
                 <p>
-                    All deliverables produced under Sagar Multiservices adhere strictly to institutional standards. Services are accessible directly via the Government e-Marketplace (GeM) platform.
+                    All deliverables produced under Sagarmultiservices adhere strictly to institutional standards. Services are accessible directly via the Government e-Marketplace (GeM) platform.
                 </p>
                 <div class="grid sm:grid-cols-2 gap-4 text-xs pt-2">
                     <div class="p-3 bg-slate-50 rounded">
@@ -266,7 +357,7 @@
         </section>
 
         <!-- 8. CERTIFICATIONS SECTION -->
-        <section id="certifications" class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-b border-slate-200">
+        <section id="certifications" class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-b border-slate-200 bg-slate-50">
             <h2 class="text-2xl font-bold text-slate-900 mb-2">Key Executive Certifications</h2>
             <p class="text-slate-600 mb-6 text-sm">Selected institutional credentials out of 27 completed professional certifications</p>
             
@@ -299,13 +390,13 @@
         </section>
 
         <!-- 9. COLLABORATION SECTION -->
-        <section id="collaboration" class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-b border-slate-200 bg-slate-50">
+        <section id="collaboration" class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-b border-slate-200">
             <h2 class="text-2xl font-bold text-slate-900 mb-4">Institutional & Government Collaboration</h2>
             <p class="text-slate-700 text-sm leading-relaxed mb-6">
-                Sagar Multiservices collaborates with government offices, municipal bodies, zilla parishads, planning units, and public institutions to deliver specialized workshops, research studies, and policy content.
+                Sagarmultiservices collaborates with government offices, municipal bodies, zilla parishads, planning units, and public institutions to deliver specialized workshops, research studies, and policy content.
             </p>
             <div class="p-4 bg-blue-50 border border-blue-200 rounded-lg text-xs text-blue-900">
-                <strong>Procurement Channel:</strong> Direct direct-purchase or bidding orders through GeM portal (Seller ID: 4B0Z260014455308).
+                <strong>Procurement Channel:</strong> Direct purchase or bidding orders through GeM portal (Seller ID: 4B0Z260014455308).
             </div>
         </section>
 
@@ -329,11 +420,10 @@
 
                 <div class="text-xs text-slate-400 space-y-2 border-t md:border-t-0 md:border-l border-slate-700 pt-4 md:pt-0 md:pl-8">
                     <h3 class="text-lg font-bold text-amber-400 mb-4">Registration Numbers</h3>
-                    <p><strong class="text-white">Enterprise:</strong> Sagar Multiservices</p>
+                    <p><strong class="text-white">Enterprise:</strong> Sagarmultiservices</p>
                     <p><strong class="text-white">Udyam Registration:</strong> UDYAM-MH-04-0304633</p>
                     <p><strong class="text-white">GeM Seller ID:</strong> 4B0Z260014455308</p>
                     <p><strong class="text-white">PAN:</strong> BRYPG2416G</p>
-                    <p><strong class="text-white">Category:</strong> SC Micro Enterprise</p>
                 </div>
             </div>
         </section>
@@ -341,8 +431,26 @@
 
     <!-- Footer -->
     <footer class="bg-slate-900 border-t border-slate-800 text-slate-500 text-xs py-6 text-center">
-        <p>&copy; Sagar Multiservices. Registered with Ministry of MSME, Government of India.</p>
+        <p>&copy; Sagarmultiservices. Registered with Ministry of MSME, Government of India.</p>
     </footer>
 
+    <!-- Filter Script -->
+    <script>
+        function filterPortfolio(category) {
+            const items = document.querySelectorAll('.portfolio-item');
+            const buttons = document.querySelectorAll('.tab-btn');
+
+            buttons.forEach(btn => btn.classList.remove('active'));
+            document.getElementById('btn-' + category).classList.add('active');
+
+            items.forEach(item => {
+                if (category === 'all' || item.classList.contains(category)) {
+                    item.style.display = 'flex';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+    </script>
 </body>
 </html>
