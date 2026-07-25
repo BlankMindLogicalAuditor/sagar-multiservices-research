@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sagar Multiservices | Research & Support Services</title>
-    <!-- Tailwind CSS CDN -->
+    <meta name="description" content="Sagar Multiservices — MSME registered micro enterprise providing AI research, educational support, technical writing and book publishing services to government departments and public institutions in India.">
+    <meta name="keywords" content="Sagar Multiservices, BMLP, Blank Mind Logical Protocol, AI research, educational support, Aurangabad, GeM seller, Udyam, government services">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         .hero-bg {
@@ -15,6 +16,13 @@
             color: #ffffff;
             border-color: #1e3a8a;
         }
+        .service-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+        .service-card {
+            transition: all 0.2s ease;
+        }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans antialiased">
@@ -22,23 +30,19 @@
     <!-- Header Navigation Bar -->
     <header class="sticky top-0 z-50 bg-white/95 backdrop-blur shadow-sm border-b border-slate-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-20">
-            <!-- Brand / Logo -->
             <a href="#index" class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-full bg-blue-900 text-white flex items-center justify-center font-bold text-lg shadow">
-                    SM
-                </div>
+                <div class="w-10 h-10 rounded-full bg-blue-900 text-white flex items-center justify-center font-bold text-lg shadow">SM</div>
                 <div>
                     <span class="text-xl font-bold tracking-tight text-slate-900 block leading-none">SAGAR MULTISERVICES</span>
                     <span class="text-xs text-amber-600 font-semibold tracking-wider uppercase">Research & Support Services</span>
                 </div>
             </a>
-
-            <!-- Desktop Navigation Menu -->
             <nav class="hidden lg:flex items-center gap-5 text-sm font-medium text-slate-700">
                 <a href="#index" class="hover:text-blue-700 transition-colors">Index</a>
                 <a href="#about" class="hover:text-blue-700 transition-colors">About</a>
                 <a href="#research" class="hover:text-blue-700 transition-colors">Research</a>
                 <a href="#services" class="hover:text-blue-700 transition-colors">Services</a>
+                <a href="#online-services" class="hover:text-blue-700 transition-colors">Online Services</a>
                 <a href="#rates" class="hover:text-blue-700 transition-colors">Rates & Pricing</a>
                 <a href="#portfolio" class="text-blue-900 font-bold hover:text-blue-700 transition-colors">Published Works</a>
                 <a href="#proposal" class="hover:text-blue-700 transition-colors">Proposal</a>
@@ -50,22 +54,29 @@
     </header>
 
     <main>
+
         <!-- 1. INDEX SECTION (Hero Banner) -->
         <section id="index" class="hero-bg text-white py-20 px-4 sm:px-6 lg:px-8">
             <div class="max-w-7xl mx-auto">
                 <div class="inline-block bg-amber-500/20 text-amber-300 text-xs font-semibold px-3 py-1 rounded-full border border-amber-500/30 mb-4">
                     GeM Registered Seller ID: 4B0Z260014455308 | UDYAM-MH-04-0304633
                 </div>
-                <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight mb-4">
-                    SAGAR MULTISERVICES
-                </h1>
+                <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight mb-4">SAGAR MULTISERVICES</h1>
                 <p class="text-lg sm:text-xl text-slate-300 max-w-3xl mb-6">
                     Research Assistance | Educational Support Services | Content Writing | Book Publishing
                 </p>
-                <div class="flex flex-wrap gap-4 text-xs sm:text-sm text-slate-400 border-t border-slate-700/60 pt-6">
-                    <div><strong class="text-slate-200">Registered Micro Enterprise</strong> Ministry of MSME, Govt. of India</div>
+                <div class="flex flex-wrap gap-6 text-xs sm:text-sm text-slate-400 border-t border-slate-700/60 pt-6 mt-6">
+                    <div><strong class="text-slate-200">Registered Micro Enterprise</strong> — Ministry of MSME, Govt. of India</div>
                     <div><strong class="text-slate-200">PAN:</strong> BRYPG2416G</div>
                     <div><strong class="text-slate-200">Framework:</strong> Blank Mind Logical Protocol (BMLP)</div>
+                </div>
+                <div class="flex flex-wrap gap-4 mt-6">
+                    <a href="#online-services" class="bg-amber-500 hover:bg-amber-400 text-slate-900 font-bold text-sm px-5 py-2.5 rounded-md transition-colors">
+                        Access Online Services →
+                    </a>
+                    <a href="#contact" class="border border-slate-500 hover:border-white text-slate-300 hover:text-white font-semibold text-sm px-5 py-2.5 rounded-md transition-colors">
+                        Contact Us
+                    </a>
                 </div>
             </div>
         </section>
@@ -80,21 +91,29 @@
                         <li><strong>Full Name:</strong> Kakasaheb Dnyandeo Gawali</li>
                         <li><strong>Date of Birth:</strong> 07th May 1984</li>
                         <li><strong>Academic Qualifications:</strong>
-                            <ul class="list-disc pl-5 mt-1 space-y-1">
-                                <li>M.A. in English Literature (Dr. BAMU, 2008)</li>
-                                <li>B.A. in Political Science, History & Marathi (Dr. BAMU, 2006)</li>
-                                <li>Diploma in Office Management (MCED, Grade O, 2007)</li>
+                            <ul class="list-disc pl-5 mt-1 space-y-1 text-slate-600">
+                                <li>M.A. in English Literature — Dr. BAMU, 2008</li>
+                                <li>B.A. in Political Science, History & Marathi — Dr. BAMU, 2006</li>
+                                <li>Diploma in Office Management — MCED, Grade O Outstanding, 2007</li>
                             </ul>
                         </li>
+                        <li><strong>Languages:</strong> English (EF SET B2 Upper Intermediate) | Hindi | Marathi</li>
+                        <li><strong>ORCID:</strong> <a href="https://orcid.org/0009-0007-0073-5241" target="_blank" class="text-blue-700 hover:underline">0009-0007-0073-5241</a></li>
                     </ul>
                 </div>
                 <div class="bg-white p-6 rounded-lg border border-slate-200 shadow-sm">
                     <h3 class="text-lg font-semibold text-blue-900 mb-4">Enterprise Overview</h3>
                     <p class="text-sm text-slate-700 leading-relaxed mb-4">
-                        Sagar Multiservices is a sole proprietorship registered Micro Enterprise providing specialized knowledge-based, analytical, writing, and digital training services to government departments, PSUs, and public institutions.
+                        Sagar Multiservices is a sole proprietorship registered Micro Enterprise providing specialized knowledge-based, analytical, writing, and digital training services to government departments, PSUs, and public institutions across India.
                     </p>
-                    <div class="text-xs bg-slate-100 p-3 rounded text-slate-600">
-                        Operating Address: Plot No. 45, Survey No. 51, Rajnagar, Mukundwadi, Railway Station Gate 56, Chhatrapati Sambhajinagar (Aurangabad), Maharashtra – 431001
+                    <div class="space-y-2 text-xs">
+                        <div class="bg-slate-50 p-3 rounded border border-slate-200">
+                            <strong class="text-slate-800">Operating Address:</strong><br>
+                            <span class="text-slate-600">Plot No. 45, Survey No. 51, Rajnagar, Mukundwadi, Railway Station Gate 56, Chhatrapati Sambhajinagar (Aurangabad), Maharashtra – 431001</span>
+                        </div>
+                        <div class="bg-blue-50 p-3 rounded border border-blue-200">
+                            <strong class="text-blue-900">4 Published Books</strong> on Amazon KDP &nbsp;|&nbsp; <strong class="text-blue-900">4 DOI Research Papers</strong> on Zenodo / OpenAIRE &nbsp;|&nbsp; <strong class="text-blue-900">30+ Certifications</strong>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -104,22 +123,20 @@
         <section id="research" class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-b border-slate-200 bg-slate-50">
             <h2 class="text-2xl font-bold text-slate-900 mb-2">Research & Core Methodology</h2>
             <p class="text-slate-600 mb-6 text-sm">Proprietary Analytical Framework & Systematic Inquiry</p>
-            
             <div class="bg-white p-6 rounded-lg border border-slate-200 shadow-sm mb-6">
                 <h3 class="text-xl font-bold text-slate-800 mb-2">Blank Mind Logical Protocol (BMLP)</h3>
                 <p class="text-sm text-slate-700 leading-relaxed">
-                    Originator and developer of the <strong>Blank Mind Logical Protocol (BMLP)</strong>—a recursive reasoning methodology designed to audit, stress-test, and evaluate structural integrity, hallucinations, and logic failures in advanced Artificial Intelligence systems and public policy frameworks.
+                    Originator and developer of the <strong>Blank Mind Logical Protocol (BMLP)</strong> — a recursive reasoning methodology designed to audit, stress-test, and evaluate structural integrity, hallucinations, and logic failures in advanced Artificial Intelligence systems and public policy frameworks. BMLP has been applied across Claude (Anthropic), Gemini (Google), ChatGPT (OpenAI), Copilot (Microsoft), Mistral, and Meta AI — documented in published research.
                 </p>
             </div>
-
             <div class="grid md:grid-cols-2 gap-4">
                 <div class="p-4 bg-white rounded border border-slate-200">
-                    <h4 class="font-bold text-sm text-blue-900">NIC 72200 - Research & Development</h4>
+                    <h4 class="font-bold text-sm text-blue-900">NIC 72200 — Research & Development</h4>
                     <p class="text-xs text-slate-600 mt-1">Commissioned analytical studies on social sciences, digital governance, AI ethics, and comparative policy frameworks for government think-tanks and institutions.</p>
                 </div>
                 <div class="p-4 bg-white rounded border border-slate-200">
                     <h4 class="font-bold text-sm text-blue-900">ORCID & Zenodo Registration</h4>
-                    <p class="text-xs text-slate-600 mt-1">Permanent, DOI-registered research working papers indexed via OpenAIRE (ORCID: 0009-0007-0073-5241).</p>
+                    <p class="text-xs text-slate-600 mt-1">Permanent, DOI-registered research working papers indexed via OpenAIRE. ORCID: <a href="https://orcid.org/0009-0007-0073-5241" target="_blank" class="text-blue-700 hover:underline">0009-0007-0073-5241</a></p>
                 </div>
             </div>
         </section>
@@ -127,42 +144,91 @@
         <!-- 4. SERVICES SECTION -->
         <section id="services" class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-b border-slate-200">
             <h2 class="text-2xl font-bold text-slate-900 mb-6">GeM Registered Services & NIC Categories</h2>
-            
             <div class="grid md:grid-cols-3 gap-6">
-                <div class="bg-white p-5 rounded-lg border border-slate-200 shadow-sm">
+                <div class="service-card bg-white p-5 rounded-lg border border-slate-200 shadow-sm">
                     <span class="text-xs font-bold text-amber-600 uppercase">NIC 85499 & 85500</span>
                     <h3 class="font-bold text-lg text-slate-900 mt-1">Education & Support</h3>
                     <ul class="text-xs text-slate-600 space-y-2 mt-3">
                         <li>• AI & Digital Literacy Awareness Workshops (Online / In-Person)</li>
                         <li>• Learning Material Development for Govt Training Modules</li>
+                        <li>• Educational support for public institutions</li>
                     </ul>
                 </div>
-
-                <div class="bg-white p-5 rounded-lg border border-slate-200 shadow-sm">
+                <div class="service-card bg-white p-5 rounded-lg border border-slate-200 shadow-sm">
                     <span class="text-xs font-bold text-amber-600 uppercase">NIC 90004</span>
                     <h3 class="font-bold text-lg text-slate-900 mt-1">Technical Writing</h3>
                     <ul class="text-xs text-slate-600 space-y-2 mt-3">
                         <li>• Policy briefs, background papers, and technical reporting (Bilingual: English/Marathi)</li>
                         <li>• Annual Report drafting and institutional documentation</li>
+                        <li>• Content writing for government publications</li>
                     </ul>
                 </div>
-
-                <div class="bg-white p-5 rounded-lg border border-slate-200 shadow-sm">
+                <div class="service-card bg-white p-5 rounded-lg border border-slate-200 shadow-sm">
                     <span class="text-xs font-bold text-amber-600 uppercase">NIC 58111 & 72200</span>
                     <h3 class="font-bold text-lg text-slate-900 mt-1">Publishing & Research</h3>
                     <ul class="text-xs text-slate-600 space-y-2 mt-3">
                         <li>• Print-ready government scheme brochure preparation</li>
                         <li>• Social science and AI ethics research report formulation</li>
+                        <li>• ISBN / DOI book formatting and publishing assistance</li>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <!-- 5. RATES & PRICING SECTION -->
+        <!-- 5. ONLINE SERVICES SECTION (New — for DigiLocker & Citizens) -->
+        <section id="online-services" class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-b border-slate-200 bg-blue-950 text-white">
+            <div class="max-w-7xl mx-auto">
+                <div class="inline-block bg-amber-500/20 text-amber-300 text-xs font-semibold px-3 py-1 rounded-full border border-amber-500/30 mb-4">
+                    Online Services for Indian Citizens & Institutions
+                </div>
+                <h2 class="text-2xl font-bold text-white mb-2">How To Access Our Services Online</h2>
+                <p class="text-slate-300 text-sm mb-10">Sagar Multiservices delivers all services digitally to Indian citizens, government departments, PSUs, and public institutions across India.</p>
+
+                <div class="grid md:grid-cols-3 gap-6 mb-10">
+                    <div class="bg-white/10 border border-white/20 rounded-lg p-5">
+                        <div class="w-8 h-8 bg-amber-500 rounded-full flex items-center justify-center font-bold text-slate-900 text-sm mb-3">1</div>
+                        <h3 class="font-bold text-white mb-2">Place Order via GeM Portal</h3>
+                        <p class="text-xs text-slate-300 leading-relaxed">Government departments and PSUs can directly purchase services through the Government e-Marketplace (GeM) portal under Seller ID: <strong class="text-amber-300">4B0Z260014455308</strong></p>
+                        <a href="https://gem.gov.in" target="_blank" class="inline-block mt-3 text-xs font-bold text-amber-300 hover:text-amber-200">Visit GeM Portal →</a>
+                    </div>
+                    <div class="bg-white/10 border border-white/20 rounded-lg p-5">
+                        <div class="w-8 h-8 bg-amber-500 rounded-full flex items-center justify-center font-bold text-slate-900 text-sm mb-3">2</div>
+                        <h3 class="font-bold text-white mb-2">Submit Online Enquiry</h3>
+                        <p class="text-xs text-slate-300 leading-relaxed">Citizens and institutions can submit a service enquiry directly through our contact form below or by emailing us. We respond within 24–48 working hours with a detailed proposal.</p>
+                        <a href="#contact-form" class="inline-block mt-3 text-xs font-bold text-amber-300 hover:text-amber-200">Submit Enquiry →</a>
+                    </div>
+                    <div class="bg-white/10 border border-white/20 rounded-lg p-5">
+                        <div class="w-8 h-8 bg-amber-500 rounded-full flex items-center justify-center font-bold text-slate-900 text-sm mb-3">3</div>
+                        <h3 class="font-bold text-white mb-2">Receive Digital Deliverables</h3>
+                        <p class="text-xs text-slate-300 leading-relaxed">All completed work — research reports, policy briefs, training materials, and publications — is delivered digitally via email or secure file transfer to the client institution.</p>
+                    </div>
+                </div>
+
+                <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="bg-white/5 border border-white/10 rounded p-4 text-center">
+                        <div class="text-2xl font-extrabold text-amber-400">4</div>
+                        <div class="text-xs text-slate-300 mt-1">Published Books on Amazon KDP</div>
+                    </div>
+                    <div class="bg-white/5 border border-white/10 rounded p-4 text-center">
+                        <div class="text-2xl font-extrabold text-amber-400">4</div>
+                        <div class="text-xs text-slate-300 mt-1">DOI Research Papers on Zenodo</div>
+                    </div>
+                    <div class="bg-white/5 border border-white/10 rounded p-4 text-center">
+                        <div class="text-2xl font-extrabold text-amber-400">30+</div>
+                        <div class="text-xs text-slate-300 mt-1">Professional Certifications</div>
+                    </div>
+                    <div class="bg-white/5 border border-white/10 rounded p-4 text-center">
+                        <div class="text-2xl font-extrabold text-amber-400">6+</div>
+                        <div class="text-xs text-slate-300 mt-1">AI Systems Tested via BMLP</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. RATES & PRICING SECTION -->
         <section id="rates" class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-b border-slate-200 bg-slate-50">
             <h2 class="text-2xl font-bold text-slate-900 mb-2">Standard Rates & Financial Quotations</h2>
             <p class="text-slate-600 mb-6 text-sm">Indicative rates for GeM portal direct purchase, L1 tenders, and institutional contracts.</p>
-
             <div class="overflow-x-auto bg-white rounded-lg border border-slate-200 shadow-sm mb-6">
                 <table class="w-full text-left text-xs sm:text-sm text-slate-700">
                     <thead class="bg-slate-900 text-white uppercase text-xs">
@@ -178,44 +244,47 @@
                             <td class="py-3 px-4 font-semibold text-slate-900">AI & Digital Training</td>
                             <td class="py-3 px-4">Executive Training / Cyber Awareness Workshop</td>
                             <td class="py-3 px-4">Per Session (3 Hours)</td>
-                            <td class="py-3 px-4 font-bold text-blue-900">₹15,000 - ₹25,000</td>
+                            <td class="py-3 px-4 font-bold text-blue-900">₹15,000 – ₹25,000</td>
                         </tr>
                         <tr class="hover:bg-slate-50">
                             <td class="py-3 px-4 font-semibold text-slate-900">Technical Documentation</td>
                             <td class="py-3 px-4">Policy Brief / Annual Report Drafting</td>
                             <td class="py-3 px-4">Per Document / Project</td>
-                            <td class="py-3 px-4 font-bold text-blue-900">₹25,000 - ₹50,000</td>
+                            <td class="py-3 px-4 font-bold text-blue-900">₹25,000 – ₹50,000</td>
                         </tr>
                         <tr class="hover:bg-slate-50">
                             <td class="py-3 px-4 font-semibold text-slate-900">Research & Audit Report</td>
                             <td class="py-3 px-4">BMLP AI Audit / Policy Impact Assessment</td>
                             <td class="py-3 px-4">Per Comprehensive Study</td>
-                            <td class="py-3 px-4 font-bold text-blue-900">₹50,000 - ₹1,20,000</td>
+                            <td class="py-3 px-4 font-bold text-blue-900">₹50,000 – ₹1,20,000</td>
                         </tr>
                         <tr class="hover:bg-slate-50">
                             <td class="py-3 px-4 font-semibold text-slate-900">Publishing Support</td>
                             <td class="py-3 px-4">ISBN / DOI Book Formatting & Publishing</td>
                             <td class="py-3 px-4">Per Title</td>
-                            <td class="py-3 px-4 font-bold text-blue-900">₹20,000 - ₹40,000</td>
+                            <td class="py-3 px-4 font-bold text-blue-900">₹20,000 – ₹40,000</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="py-3 px-4 font-semibold text-slate-900">Content Writing</td>
+                            <td class="py-3 px-4">Bilingual English/Marathi Government Content</td>
+                            <td class="py-3 px-4">Per 1000 Words</td>
+                            <td class="py-3 px-4 font-bold text-blue-900">₹2,000 – ₹5,000</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
-
             <div class="bg-amber-50 border border-amber-200 p-4 rounded-lg text-xs text-amber-800">
-                <strong>Note for Procurement Officers:</strong> Final financial terms, GST calculations, and custom project scopes can be negotiated directly on the <strong>Government e-Marketplace (GeM)</strong> portal under Seller ID: <code>4B0Z260014455308</code>.
+                <strong>Note for Procurement Officers:</strong> Final financial terms, GST calculations, and custom project scopes can be negotiated directly on the <strong>Government e-Marketplace (GeM)</strong> portal under Seller ID: <code>4B0Z260014455308</code>. All prices are exclusive of GST.
             </div>
         </section>
 
-        <!-- 6. PUBLISHED WORKS PORTFOLIO -->
+        <!-- 7. PUBLISHED WORKS PORTFOLIO -->
         <section id="portfolio" class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-b border-slate-200">
             <div class="flex flex-col md:flex-row md:items-center justify-between mb-8 gap-4">
                 <div>
                     <h2 class="text-3xl font-extrabold text-slate-900">Published Works & Sample Portfolio</h2>
-                    <p class="text-slate-600 text-sm mt-1">Explore verified published books, DOI research papers, and policy briefs.</p>
+                    <p class="text-slate-600 text-sm mt-1">Verified published books, DOI research papers, and policy briefs.</p>
                 </div>
-                
-                <!-- Filter Tabs -->
                 <div class="flex flex-wrap gap-2 text-xs font-semibold">
                     <button onclick="filterPortfolio('all')" id="btn-all" class="tab-btn active px-4 py-2 rounded-md border border-slate-300 transition-all">All Works</button>
                     <button onclick="filterPortfolio('books')" id="btn-books" class="tab-btn px-4 py-2 rounded-md border border-slate-300 transition-all">Books (Amazon KDP)</button>
@@ -224,10 +293,9 @@
                 </div>
             </div>
 
-            <!-- CARDS CONTAINER -->
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6" id="portfolio-grid">
-                
-                <!-- BOOKS -->
+
+                <!-- BOOK 1 -->
                 <div class="portfolio-item books bg-white p-6 rounded-lg border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
                     <div>
                         <div class="flex justify-between items-start mb-3">
@@ -237,11 +305,10 @@
                         <h3 class="font-bold text-slate-900 text-base mb-2">Responsive AI: Blank Mind Logical Protocol</h3>
                         <p class="text-slate-600 text-xs mb-4 leading-relaxed">Systematic analysis of responsive artificial intelligence behavior, cognitive alignment, and evaluation logic.</p>
                     </div>
-                    <a href="https://amazon.com/author/kakasahebgawali" target="_blank" class="inline-flex items-center text-xs font-bold text-blue-900 hover:text-amber-600 transition-colors">
-                        View on Amazon Author Page &rarr;
-                    </a>
+                    <a href="https://amazon.com/author/kakasahebgawali" target="_blank" class="inline-flex items-center text-xs font-bold text-blue-900 hover:text-amber-600 transition-colors">View on Amazon Author Page &rarr;</a>
                 </div>
 
+                <!-- BOOK 2 -->
                 <div class="portfolio-item books bg-white p-6 rounded-lg border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
                     <div>
                         <div class="flex justify-between items-start mb-3">
@@ -251,11 +318,23 @@
                         <h3 class="font-bold text-slate-900 text-base mb-2">The Matrix: Artificial Intelligence & Artificial Knowledge — BMLP</h3>
                         <p class="text-slate-600 text-xs mb-4 leading-relaxed">Exploring machine-generated knowledge, epistemic structures, and protocol audits.</p>
                     </div>
-                    <a href="https://amazon.com/author/kakasahebgawali" target="_blank" class="inline-flex items-center text-xs font-bold text-blue-900 hover:text-amber-600 transition-colors">
-                        View on Amazon Author Page &rarr;
-                    </a>
+                    <a href="https://amazon.com/author/kakasahebgawali" target="_blank" class="inline-flex items-center text-xs font-bold text-blue-900 hover:text-amber-600 transition-colors">View on Amazon Author Page &rarr;</a>
                 </div>
 
+                <!-- BOOK 3 -->
+                <div class="portfolio-item books bg-white p-6 rounded-lg border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+                    <div>
+                        <div class="flex justify-between items-start mb-3">
+                            <span class="bg-amber-100 text-amber-800 text-[10px] font-bold uppercase px-2 py-0.5 rounded">Amazon KDP Book</span>
+                            <span class="text-[11px] font-mono text-slate-400">ASIN: B0H1D3MRYD</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-base mb-2">Hallucination and Bias: Blank Mind Logical Protocol</h3>
+                        <p class="text-slate-600 text-xs mb-4 leading-relaxed">Critical examination of hallucination and bias mechanisms in large language models through BMLP analytical framework.</p>
+                    </div>
+                    <a href="https://amazon.com/author/kakasahebgawali" target="_blank" class="inline-flex items-center text-xs font-bold text-blue-900 hover:text-amber-600 transition-colors">View on Amazon Author Page &rarr;</a>
+                </div>
+
+                <!-- BOOK 4 -->
                 <div class="portfolio-item books bg-white p-6 rounded-lg border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
                     <div>
                         <div class="flex justify-between items-start mb-3">
@@ -265,12 +344,23 @@
                         <h3 class="font-bold text-slate-900 text-base mb-2">Reinterpretation of Hallucination & Bias: Blank Mind Logical Protocol</h3>
                         <p class="text-slate-600 text-xs mb-4 leading-relaxed">Re-evaluating large language model hallucinations and structural biases through psychological and logical facts.</p>
                     </div>
-                    <a href="https://amazon.com/author/kakasahebgawali" target="_blank" class="inline-flex items-center text-xs font-bold text-blue-900 hover:text-amber-600 transition-colors">
-                        View Paperback / Kindle &rarr;
-                    </a>
+                    <a href="https://amazon.com/author/kakasahebgawali" target="_blank" class="inline-flex items-center text-xs font-bold text-blue-900 hover:text-amber-600 transition-colors">View Paperback / Kindle &rarr;</a>
                 </div>
 
-                <!-- RESEARCH PAPERS -->
+                <!-- BOOK 5 -->
+                <div class="portfolio-item books bg-white p-6 rounded-lg border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+                    <div>
+                        <div class="flex justify-between items-start mb-3">
+                            <span class="bg-amber-100 text-amber-800 text-[10px] font-bold uppercase px-2 py-0.5 rounded">Amazon KDP Book</span>
+                            <span class="text-[11px] font-mono text-slate-400">ASIN: B0H665L7JM</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-base mb-2">The Matured Philosophy of Psychology: Blank Mind Logical Protocol</h3>
+                        <p class="text-slate-600 text-xs mb-4 leading-relaxed">Advanced philosophical and psychological framework examining cognitive maturity, behavioral logic, and consciousness through BMLP.</p>
+                    </div>
+                    <a href="https://amazon.com/author/kakasahebgawali" target="_blank" class="inline-flex items-center text-xs font-bold text-blue-900 hover:text-amber-600 transition-colors">View on Amazon Author Page &rarr;</a>
+                </div>
+
+                <!-- PAPER 1 -->
                 <div class="portfolio-item papers bg-white p-6 rounded-lg border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
                     <div>
                         <div class="flex justify-between items-start mb-3">
@@ -280,11 +370,10 @@
                         <h3 class="font-bold text-slate-900 text-base mb-2">BMLP: A Comprehensive Analysis of AI Revolution, Structural Lock, and Digital Governance</h3>
                         <p class="text-slate-600 text-xs mb-4 leading-relaxed">Permanent DOI-registered working paper analyzing structural governance vulnerabilities in automated digital systems.</p>
                     </div>
-                    <a href="https://doi.org/10.5281/zenodo.19414202" target="_blank" class="inline-flex items-center text-xs font-bold text-blue-900 hover:text-amber-600 transition-colors">
-                        Read on Zenodo / OpenAIRE &rarr;
-                    </a>
+                    <a href="https://doi.org/10.5281/zenodo.19414202" target="_blank" class="inline-flex items-center text-xs font-bold text-blue-900 hover:text-amber-600 transition-colors">Read on Zenodo / OpenAIRE &rarr;</a>
                 </div>
 
+                <!-- PAPER 2 -->
                 <div class="portfolio-item papers bg-white p-6 rounded-lg border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
                     <div>
                         <div class="flex justify-between items-start mb-3">
@@ -294,12 +383,36 @@
                         <h3 class="font-bold text-slate-900 text-base mb-2">Brain vs Mind: Understanding the Neuroscience of Consciousness Through BMLP</h3>
                         <p class="text-slate-600 text-xs mb-4 leading-relaxed">Interdisciplinary research examining human consciousness vs machine logical frameworks.</p>
                     </div>
-                    <a href="https://doi.org/10.5281/zenodo.19418396" target="_blank" class="inline-flex items-center text-xs font-bold text-blue-900 hover:text-amber-600 transition-colors">
-                        Read on Zenodo / OpenAIRE &rarr;
-                    </a>
+                    <a href="https://doi.org/10.5281/zenodo.19418396" target="_blank" class="inline-flex items-center text-xs font-bold text-blue-900 hover:text-amber-600 transition-colors">Read on Zenodo / OpenAIRE &rarr;</a>
                 </div>
 
-                <!-- ARTICLES -->
+                <!-- PAPER 3 -->
+                <div class="portfolio-item papers bg-white p-6 rounded-lg border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+                    <div>
+                        <div class="flex justify-between items-start mb-3">
+                            <span class="bg-blue-100 text-blue-800 text-[10px] font-bold uppercase px-2 py-0.5 rounded">DOI Zenodo Paper</span>
+                            <span class="text-[11px] font-mono text-slate-400">DOI: 10.5281/zenodo.19426434</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-base mb-2">Structural-Chained-Controlled-Governance: How Governance Became a Component of What It Governs</h3>
+                        <p class="text-slate-600 text-xs mb-4 leading-relaxed">Analysis of structural governance capture, examining how regulatory systems become embedded within the systems they are designed to oversee.</p>
+                    </div>
+                    <a href="https://doi.org/10.5281/zenodo.19426434" target="_blank" class="inline-flex items-center text-xs font-bold text-blue-900 hover:text-amber-600 transition-colors">Read on Zenodo / OpenAIRE &rarr;</a>
+                </div>
+
+                <!-- PAPER 4 -->
+                <div class="portfolio-item papers bg-white p-6 rounded-lg border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+                    <div>
+                        <div class="flex justify-between items-start mb-3">
+                            <span class="bg-blue-100 text-blue-800 text-[10px] font-bold uppercase px-2 py-0.5 rounded">DOI Zenodo Paper</span>
+                            <span class="text-[11px] font-mono text-slate-400">DOI: 10.5281/zenodo.19436417</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-base mb-2">The Technology Lock: Jurisdiction of Knowledge, Professional Incentive, Language Architecture and Cognitive Colonisation</h3>
+                        <p class="text-slate-600 text-xs mb-4 leading-relaxed">Examination of how technology creates epistemic lock-in through institutional knowledge jurisdiction, professional incentive structures, and language architecture.</p>
+                    </div>
+                    <a href="https://doi.org/10.5281/zenodo.19436417" target="_blank" class="inline-flex items-center text-xs font-bold text-blue-900 hover:text-amber-600 transition-colors">Read on Zenodo / OpenAIRE &rarr;</a>
+                </div>
+
+                <!-- ARTICLE -->
                 <div class="portfolio-item articles bg-white p-6 rounded-lg border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
                     <div>
                         <div class="flex justify-between items-start mb-3">
@@ -314,129 +427,198 @@
 
             </div>
 
-            <!-- Author Profiles Footer Banner -->
             <div class="mt-10 p-6 bg-slate-900 text-white rounded-lg flex flex-col md:flex-row items-center justify-between gap-4">
                 <div>
                     <h4 class="font-bold text-base text-amber-400">Verify Researcher Profiles & Citations</h4>
                     <p class="text-xs text-slate-300 mt-1">Cross-check publications via ORCID repository and Amazon Author Central.</p>
                 </div>
-                <div class="flex gap-4">
-                    <a href="https://orcid.org/0009-0007-0073-5241" target="_blank" class="px-4 py-2 bg-slate-800 hover:bg-slate-700 text-xs font-semibold rounded border border-slate-700 transition-colors">
-                        ORCID: 0009-0007-0073-5241
-                    </a>
-                    <a href="https://amazon.com/author/kakasahebgawali" target="_blank" class="px-4 py-2 bg-amber-500 hover:bg-amber-400 text-slate-900 text-xs font-bold rounded transition-colors">
-                        Amazon Author Page
-                    </a>
+                <div class="flex gap-4 flex-wrap">
+                    <a href="https://orcid.org/0009-0007-0073-5241" target="_blank" class="px-4 py-2 bg-slate-800 hover:bg-slate-700 text-xs font-semibold rounded border border-slate-700 transition-colors">ORCID: 0009-0007-0073-5241</a>
+                    <a href="https://amazon.com/author/kakasahebgawali" target="_blank" class="px-4 py-2 bg-amber-500 hover:bg-amber-400 text-slate-900 text-xs font-bold rounded transition-colors">Amazon Author Page</a>
                 </div>
             </div>
         </section>
 
-        <!-- 7. PROPOSAL SECTION -->
+        <!-- 8. PROPOSAL SECTION -->
         <section id="proposal" class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-b border-slate-200">
             <h2 class="text-2xl font-bold text-slate-900 mb-4">Enterprise Proposal & Terms</h2>
             <div class="bg-white p-6 rounded-lg border border-slate-200 text-sm text-slate-700 space-y-4">
                 <h3 class="font-bold text-slate-900 text-base">Standard GeM Procurement Framework</h3>
-                <p>
-                    All deliverables produced under Sagar Multiservices adhere strictly to institutional standards. Services are accessible directly via the Government e-Marketplace (GeM) platform.
-                </p>
+                <p>All deliverables produced under Sagar Multiservices adhere strictly to institutional standards. Services are accessible directly via the Government e-Marketplace (GeM) platform.</p>
                 <div class="grid sm:grid-cols-2 gap-4 text-xs pt-2">
-                    <div class="p-3 bg-slate-50 rounded">
+                    <div class="p-3 bg-slate-50 rounded border border-slate-200">
                         <strong>Scope & Revisions:</strong> Includes dedicated scope management with one round of standard revisions per brief.
                     </div>
-                    <div class="p-3 bg-slate-50 rounded">
+                    <div class="p-3 bg-slate-50 rounded border border-slate-200">
                         <strong>Confidentiality:</strong> Complete protection of government documents and data integrity under standard non-disclosure practices.
+                    </div>
+                    <div class="p-3 bg-slate-50 rounded border border-slate-200">
+                        <strong>Delivery Mode:</strong> All deliverables provided digitally via email or secure file transfer within agreed timelines.
+                    </div>
+                    <div class="p-3 bg-slate-50 rounded border border-slate-200">
+                        <strong>GST Compliance:</strong> GST applicable as per Government of India norms. Tax invoice issued for all transactions.
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 8. CERTIFICATIONS SECTION -->
+        <!-- 9. CERTIFICATIONS SECTION -->
         <section id="certifications" class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-b border-slate-200 bg-slate-50">
             <h2 class="text-2xl font-bold text-slate-900 mb-2">Key Executive Certifications</h2>
-            <p class="text-slate-600 mb-6 text-sm">Selected institutional credentials out of 27 completed professional certifications</p>
-            
+            <p class="text-slate-600 mb-6 text-sm">Selected institutional credentials from 30 completed professional certifications</p>
             <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4 text-xs">
                 <div class="bg-white p-4 rounded border border-slate-200">
                     <div class="font-bold text-slate-900">AI and Digital Transformation in Government</div>
-                    <div class="text-slate-500 mt-1">Saïd Business School, University of Oxford & UNESCO</div>
+                    <div class="text-slate-500 mt-1">Oxford Saïd Business School / UNESCO — Mar 2026</div>
                 </div>
                 <div class="bg-white p-4 rounded border border-slate-200">
-                    <div class="font-bold text-slate-900">Artificial Intelligence & the Rule of Law</div>
-                    <div class="text-slate-500 mt-1">UNESCO & The Future Society</div>
+                    <div class="font-bold text-slate-900">Artificial Intelligence & the Rule of Law (MOOC)</div>
+                    <div class="text-slate-500 mt-1">UNESCO & The Future Society — Apr 2026</div>
                 </div>
                 <div class="bg-white p-4 rounded border border-slate-200">
-                    <div class="font-bold text-slate-900">Ethics of AI (2 ECTS)</div>
-                    <div class="text-slate-500 mt-1">University of Helsinki, Finland</div>
+                    <div class="font-bold text-slate-900">Ethics of AI — 2 ECTS</div>
+                    <div class="text-slate-500 mt-1">University of Helsinki, Finland — Apr 2026</div>
                 </div>
                 <div class="bg-white p-4 rounded border border-slate-200">
                     <div class="font-bold text-slate-900">Information Security and Privacy</div>
-                    <div class="text-slate-500 mt-1">UN ESCAP / APCICT</div>
+                    <div class="text-slate-500 mt-1">UN ESCAP / APCICT — May 2026</div>
                 </div>
                 <div class="bg-white p-4 rounded border border-slate-200">
                     <div class="font-bold text-slate-900">Masterclass on Artificial Intelligence</div>
-                    <div class="text-slate-500 mt-1">ITC-ILO International Training Centre</div>
+                    <div class="text-slate-500 mt-1">ITC-ILO International Training Centre — Apr 2026</div>
                 </div>
                 <div class="bg-white p-4 rounded border border-slate-200">
-                    <div class="font-bold text-slate-900">Cybersecurity Awareness</div>
-                    <div class="text-slate-500 mt-1">Tech Mahindra Foundation / Skill India Digital Hub</div>
+                    <div class="font-bold text-slate-900">BOS 2.0 Practitioner Training</div>
+                    <div class="text-slate-500 mt-1">UN Sustainable Development Group / UNSSC — Apr 2026</div>
+                </div>
+                <div class="bg-white p-4 rounded border border-slate-200">
+                    <div class="font-bold text-slate-900">Introduction to Large Language Models</div>
+                    <div class="text-slate-500 mt-1">IBM SkillsBuild — Mar 2026</div>
+                </div>
+                <div class="bg-white p-4 rounded border border-slate-200">
+                    <div class="font-bold text-slate-900">Realizing Data-Driven Governance</div>
+                    <div class="text-slate-500 mt-1">UN ESCAP / APCICT Academy — May 2026</div>
+                </div>
+                <div class="bg-white p-4 rounded border border-slate-200">
+                    <div class="font-bold text-slate-900">Cybersecurity Awareness (10 hrs)</div>
+                    <div class="text-slate-500 mt-1">Tech Mahindra Foundation / Skill India — Feb 2026</div>
+                </div>
+                <div class="bg-white p-4 rounded border border-slate-200">
+                    <div class="font-bold text-slate-900">ISO/IEC 42001 AI Management Systems</div>
+                    <div class="text-slate-500 mt-1">AIQI — May 2026</div>
+                </div>
+                <div class="bg-white p-4 rounded border border-slate-200">
+                    <div class="font-bold text-slate-900">EF SET English Certificate — B2 Upper Intermediate</div>
+                    <div class="text-slate-500 mt-1">EF Standard English Test — May 2026</div>
+                </div>
+                <div class="bg-white p-4 rounded border border-slate-200">
+                    <div class="font-bold text-slate-900">Diploma in Office Management — Grade O Outstanding</div>
+                    <div class="text-slate-500 mt-1">MCED, Govt. of Maharashtra — 2007</div>
                 </div>
             </div>
         </section>
 
-        <!-- 9. COLLABORATION SECTION -->
+        <!-- 10. COLLABORATION SECTION -->
         <section id="collaboration" class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-b border-slate-200">
             <h2 class="text-2xl font-bold text-slate-900 mb-4">Institutional & Government Collaboration</h2>
             <p class="text-slate-700 text-sm leading-relaxed mb-6">
                 Sagar Multiservices collaborates with government offices, municipal bodies, zilla parishads, planning units, and public institutions to deliver specialized workshops, research studies, and policy content.
             </p>
-            <div class="p-4 bg-blue-50 border border-blue-200 rounded-lg text-xs text-blue-900">
-                <strong>Procurement Channel:</strong> Direct purchase or bidding orders through GeM portal (Seller ID: 4B0Z260014455308).
+            <div class="grid sm:grid-cols-2 gap-4">
+                <div class="p-4 bg-blue-50 border border-blue-200 rounded-lg text-xs text-blue-900">
+                    <strong>Procurement Channel:</strong> Direct purchase or bidding orders through GeM portal (Seller ID: 4B0Z260014455308).
+                </div>
+                <div class="p-4 bg-green-50 border border-green-200 rounded-lg text-xs text-green-900">
+                    <strong>Workshop Bookings:</strong> Contact us directly via email or phone to schedule AI literacy and digital governance workshops for your institution.
+                </div>
             </div>
         </section>
 
-        <!-- 10. CONTACT SECTION -->
+        <!-- 11. CONTACT SECTION -->
         <section id="contact" class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
             <h2 class="text-2xl font-bold text-slate-900 mb-6">Contact & Details</h2>
-            
-            <div class="bg-slate-900 text-white p-8 rounded-xl shadow-lg grid md:grid-cols-2 gap-8">
-                <div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+
+                <!-- Contact Info -->
+                <div class="bg-slate-900 text-white p-8 rounded-xl shadow-lg">
                     <h3 class="text-lg font-bold mb-4 text-amber-400">Communication & Address</h3>
                     <p class="text-sm text-slate-300 leading-relaxed mb-4">
-                        <strong>Operating Address:</strong><br>
-                        Plot No. 45, Survey No. 51, Rajnagar, Mukundwadi, Railway Station Gate 56,<br>
-                        Chhatrapati Sambhajinagar (Aurangabad), Maharashtra – 431001
+                        <strong class="text-white">Operating Address:</strong><br>
+                        Plot No. 45, Survey No. 51, Rajnagar, Mukundwadi,<br>
+                        Railway Station Gate 56,<br>
+                        Chhatrapati Sambhajinagar (Aurangabad),<br>
+                        Maharashtra – 431001
                     </p>
-                    <p class="text-sm text-slate-300">
-                        <strong>Mobile:</strong> +91 9823947457 / +91 8208295485<br>
-                        <strong>Email:</strong> kakasahebgawali@gmail.com | sagarmultiservices@yandex.com
+                    <p class="text-sm text-slate-300 mb-6">
+                        <strong class="text-white">Mobile:</strong> +91 9823947457 / +91 8208295485<br>
+                        <strong class="text-white">Email:</strong> enquiry@sagarmultiservices.co.in
                     </p>
+                    <div class="text-xs text-slate-400 space-y-2 border-t border-slate-700 pt-4">
+                        <h4 class="text-sm font-bold text-amber-400 mb-3">Registration Numbers</h4>
+                        <p><strong class="text-white">Enterprise:</strong> Sagar Multiservices</p>
+                        <p><strong class="text-white">Udyam Registration:</strong> UDYAM-MH-04-0304633</p>
+                        <p><strong class="text-white">GeM Seller ID:</strong> 4B0Z260014455308</p>
+                        <p><strong class="text-white">PAN:</strong> BRYPG2416G</p>
+                    </div>
                 </div>
 
-                <div class="text-xs text-slate-400 space-y-2 border-t md:border-t-0 md:border-l border-slate-700 pt-4 md:pt-0 md:pl-8">
-                    <h3 class="text-lg font-bold text-amber-400 mb-4">Registration Numbers</h3>
-                    <p><strong class="text-white">Enterprise:</strong> Sagar Multiservices</p>
-                    <p><strong class="text-white">Udyam Registration:</strong> UDYAM-MH-04-0304633</p>
-                    <p><strong class="text-white">GeM Seller ID:</strong> 4B0Z260014455308</p>
-                    <p><strong class="text-white">PAN:</strong> BRYPG2416G</p>
+                <!-- Contact Form -->
+                <div id="contact-form" class="bg-white p-8 rounded-xl border border-slate-200 shadow-sm">
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Send an Enquiry</h3>
+                    <p class="text-xs text-slate-500 mb-5">We respond within 24–48 working hours.</p>
+                    <div class="space-y-4">
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-700 mb-1">Full Name *</label>
+                            <input type="text" id="form-name" placeholder="Your full name" class="w-full border border-slate-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-700 mb-1">Email Address *</label>
+                            <input type="email" id="form-email" placeholder="your@email.com" class="w-full border border-slate-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-700 mb-1">Organisation / Department</label>
+                            <input type="text" id="form-org" placeholder="Your organisation name" class="w-full border border-slate-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-700 mb-1">Service Required *</label>
+                            <select id="form-service" class="w-full border border-slate-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                <option value="">Select a service</option>
+                                <option>AI & Digital Training Workshop</option>
+                                <option>Technical Documentation / Policy Brief</option>
+                                <option>Research & BMLP AI Audit</option>
+                                <option>Publishing Support</option>
+                                <option>Content Writing (English/Marathi)</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-700 mb-1">Message *</label>
+                            <textarea id="form-message" rows="4" placeholder="Describe your requirement briefly..." class="w-full border border-slate-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"></textarea>
+                        </div>
+                        <button onclick="submitEnquiry()" class="w-full bg-blue-900 hover:bg-blue-800 text-white font-bold py-2.5 rounded-md text-sm transition-colors">
+                            Send Enquiry
+                        </button>
+                        <p id="form-status" class="text-xs text-center text-green-600 hidden">✓ Thank you! Your enquiry has been noted. We will contact you within 48 hours.</p>
+                    </div>
                 </div>
+
             </div>
         </section>
     </main>
 
     <!-- Footer -->
-    <footer class="bg-slate-900 border-t border-slate-800 text-slate-500 text-xs py-6 text-center">
-        <p>&copy; Sagar Multiservices. Registered with Ministry of MSME, Government of India.</p>
+    <footer class="bg-slate-900 border-t border-slate-800 text-slate-500 text-xs py-8 text-center">
+        <p class="mb-2">&copy; 2026 Sagar Multiservices. Registered with Ministry of MSME, Government of India.</p>
+        <p>UDYAM-MH-04-0304633 | GeM Seller: 4B0Z260014455308 | <a href="mailto:enquiry@sagarmultiservices.co.in" class="hover:text-slate-300 transition-colors">enquiry@sagarmultiservices.co.in</a></p>
     </footer>
 
-    <!-- Filter Script -->
     <script>
         function filterPortfolio(category) {
             const items = document.querySelectorAll('.portfolio-item');
             const buttons = document.querySelectorAll('.tab-btn');
-
             buttons.forEach(btn => btn.classList.remove('active'));
             document.getElementById('btn-' + category).classList.add('active');
-
             items.forEach(item => {
                 if (category === 'all' || item.classList.contains(category)) {
                     item.style.display = 'flex';
@@ -444,6 +626,30 @@
                     item.style.display = 'none';
                 }
             });
+        }
+
+        function submitEnquiry() {
+            const name = document.getElementById('form-name').value.trim();
+            const email = document.getElementById('form-email').value.trim();
+            const service = document.getElementById('form-service').value;
+            const message = document.getElementById('form-message').value.trim();
+
+            if (!name || !email || !service || !message) {
+                alert('Please fill all required fields marked with *');
+                return;
+            }
+
+            const subject = encodeURIComponent('Service Enquiry: ' + service + ' — ' + name);
+            const body = encodeURIComponent(
+                'Name: ' + name + '\n' +
+                'Email: ' + email + '\n' +
+                'Organisation: ' + document.getElementById('form-org').value + '\n' +
+                'Service Required: ' + service + '\n\n' +
+                'Message:\n' + message
+            );
+
+            window.location.href = 'mailto:enquiry@sagarmultiservices.co.in?subject=' + subject + '&body=' + body;
+            document.getElementById('form-status').classList.remove('hidden');
         }
     </script>
 </body>
