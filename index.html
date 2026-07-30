@@ -179,6 +179,7 @@
         /* ── GRID LAYOUTS ── */
         .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; }
         .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
+        .grid-4 { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
 
         /* ── CARD ── */
         .card {
@@ -404,6 +405,7 @@
         .footer-col p,
         .footer-col a    { font-size: 0.8rem; margin-bottom: 6px; display: block; color: #A0AEC0; transition: color 0.2s; }
         .footer-col a:hover { color: var(--accent); }
+        .footer-padding  { padding: 50px 5% 0; }
         .footer-dec-wrap { padding: 0 5% 30px; }
         .footer-nav-wrap { padding: 0 5% 40px; }
         .footer-bottom {
@@ -558,10 +560,10 @@
         </div>
         <div class="card">
             <h3 style="color:var(--primary); margin-bottom:14px; font-size:1.15rem;">
-                <i class="fa-solid fa-brain" style="color:var(--accent);"></i> Blank Mind Logical Auditor
+                <i class="fa-solid fa-brain" style="color:var(--accent);"></i> Blank Mind Logical Protocol (BMLP)
             </h3>
             <p style="font-size:0.9rem; color:var(--text-muted); margin-bottom:18px;">
-                Originator and developer of the <strong>Blank Mind Logical Auditor</strong> — a recursive reasoning methodology designed to audit, stress-test, and evaluate structural integrity, hallucinations, and logic failures in advanced Artificial Intelligence systems and public policy frameworks.
+                Originator and developer of the <strong>Blank Mind Logical Protocol (BMLP)</strong> — a recursive reasoning methodology designed to audit, stress-test, and evaluate structural integrity, hallucinations, and logic failures in advanced Artificial Intelligence systems and public policy frameworks.
             </p>
             <div class="bmlp-feature"><i class="fa-solid fa-check-circle"></i> Assumption-Free System Auditing</div>
             <div class="bmlp-feature"><i class="fa-solid fa-check-circle"></i> AI Reliability &amp; Governance Risk Evaluation</div>
@@ -721,7 +723,7 @@
                 </tr>
                 <tr>
                     <td>Research &amp; Audit Report</td>
-                    <td>Blank Mind Logical Auditor AI Audit / Policy Assessment</td>
+                    <td>BMLP AI Audit / Policy Impact Assessment</td>
                     <td>Per Comprehensive Study</td>
                     <td>₹50,000 – ₹1,20,000</td>
                 </tr>
@@ -854,7 +856,7 @@
 </div>
 
 <!-- ════════════════════════════════════════
-     11. CERTIFICATE VERIFICATION
+     11. CERTIFICATE VERIFICATION (NEW)
 ════════════════════════════════════════ -->
 <div class="section-wrap" id="verify-section">
     <div class="section-title">
@@ -1057,7 +1059,7 @@
                     <option value="">Select a service</option>
                     <option>AI &amp; Digital Training Workshop</option>
                     <option>Technical Documentation / Policy Brief</option>
-                    <option>Research &amp; Blank Mind Logical Auditor AI Audit</option>
+                    <option>Research &amp; BMLP AI Audit</option>
                     <option>Publishing Support</option>
                     <option>Content Writing (English/Marathi)</option>
                     <option>Other</option>
@@ -1113,7 +1115,7 @@
                 <h4>Standards &amp; Policy</h4>
                 <p>WCAG 2.1 Accessibility Compliant</p>
                 <p>IT Act 2000 &amp; MeitY Aligned</p>
-                <p>Blank Mind Logical Auditor Framework</p>
+                <p>BMLP Research Framework</p>
                 <p style="margin-top:8px;"><a href="https://gem.gov.in" target="_blank">GeM Portal</a></p>
                 <a href="https://amazon.com/author/kakasahebgawali" target="_blank">Amazon Author Page</a>
             </div>
@@ -1210,7 +1212,7 @@
         if (e.key === 'Enter') verifySagarCertificate();
     });
 
-    /* ── CONTACT FORM INTEGRATION VIA WEB3FORMS (ZOHO MAIL ROUTED) ── */
+    /* ── CONTACT FORM INTEGRATION VIA WEB3FORMS ── */
     async function submitEnquiry() {
         const name    = document.getElementById('cf-name').value.trim();
         const email   = document.getElementById('cf-email').value.trim();
@@ -1235,13 +1237,13 @@
                     'Accept': 'application/json'
                 },
                 body: JSON.stringify({
-                    access_key: "bd5e0c50-32b0-4592-80ea-3487f9d9c8eb",
+                    access_key: "9e2f8ea7-24c3-44de-ba41-38c4c0f99c48",
                     name: name,
                     email: email,
                     organisation: org || 'N/A',
-                    service_required: service || 'Not specified',
+                    service: service || 'Not specified',
                     message: message,
-                    subject: `New Website Enquiry from ${name} (${org || 'Sagar Multiservices'})`
+                    subject: `New Website Enquiry from ${name}`
                 })
             });
 
@@ -1255,10 +1257,10 @@
                 document.getElementById('cf-service').value = '';
                 document.getElementById('cf-message').value = '';
             } else {
-                alert('Submission error: ' + (result.message || 'Please try again.'));
+                alert(result.message || 'Form submission failed. Please try again or email us directly.');
             }
         } catch (error) {
-            alert('An error occurred while sending your enquiry. Please check your internet connection.');
+            alert('An error occurred while sending your enquiry. Please check your network connection.');
         } finally {
             submitBtn.disabled = false;
             submitBtn.innerText = 'Send Enquiry';
