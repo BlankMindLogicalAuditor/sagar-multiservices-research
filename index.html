@@ -179,7 +179,6 @@
         /* ── GRID LAYOUTS ── */
         .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; }
         .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
-        .grid-4 { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
 
         /* ── CARD ── */
         .card {
@@ -405,7 +404,6 @@
         .footer-col p,
         .footer-col a    { font-size: 0.8rem; margin-bottom: 6px; display: block; color: #A0AEC0; transition: color 0.2s; }
         .footer-col a:hover { color: var(--accent); }
-        .footer-padding  { padding: 50px 5% 0; }
         .footer-dec-wrap { padding: 0 5% 30px; }
         .footer-nav-wrap { padding: 0 5% 40px; }
         .footer-bottom {
@@ -560,10 +558,10 @@
         </div>
         <div class="card">
             <h3 style="color:var(--primary); margin-bottom:14px; font-size:1.15rem;">
-                <i class="fa-solid fa-brain" style="color:var(--accent);"></i> Blank Mind Logical Protocol (BMLP)
+                <i class="fa-solid fa-brain" style="color:var(--accent);"></i> Blank Mind Logical Auditor
             </h3>
             <p style="font-size:0.9rem; color:var(--text-muted); margin-bottom:18px;">
-                Originator and developer of the <strong>Blank Mind Logical Protocol (BMLP)</strong> — a recursive reasoning methodology designed to audit, stress-test, and evaluate structural integrity, hallucinations, and logic failures in advanced Artificial Intelligence systems and public policy frameworks.
+                Originator and developer of the <strong>Blank Mind Logical Auditor</strong> — a recursive reasoning methodology designed to audit, stress-test, and evaluate structural integrity, hallucinations, and logic failures in advanced Artificial Intelligence systems and public policy frameworks.
             </p>
             <div class="bmlp-feature"><i class="fa-solid fa-check-circle"></i> Assumption-Free System Auditing</div>
             <div class="bmlp-feature"><i class="fa-solid fa-check-circle"></i> AI Reliability &amp; Governance Risk Evaluation</div>
@@ -723,7 +721,7 @@
                 </tr>
                 <tr>
                     <td>Research &amp; Audit Report</td>
-                    <td>BMLP AI Audit / Policy Impact Assessment</td>
+                    <td>Blank Mind Logical Auditor AI Audit / Policy Assessment</td>
                     <td>Per Comprehensive Study</td>
                     <td>₹50,000 – ₹1,20,000</td>
                 </tr>
@@ -856,7 +854,7 @@
 </div>
 
 <!-- ════════════════════════════════════════
-     11. CERTIFICATE VERIFICATION (NEW)
+     11. CERTIFICATE VERIFICATION
 ════════════════════════════════════════ -->
 <div class="section-wrap" id="verify-section">
     <div class="section-title">
@@ -1059,7 +1057,7 @@
                     <option value="">Select a service</option>
                     <option>AI &amp; Digital Training Workshop</option>
                     <option>Technical Documentation / Policy Brief</option>
-                    <option>Research &amp; BMLP AI Audit</option>
+                    <option>Research &amp; Blank Mind Logical Auditor AI Audit</option>
                     <option>Publishing Support</option>
                     <option>Content Writing (English/Marathi)</option>
                     <option>Other</option>
@@ -1069,8 +1067,8 @@
                 <label>Message *</label>
                 <textarea id="cf-message" rows="4" placeholder="Describe your requirements..." required></textarea>
             </div>
-            <button onclick="submitEnquiry()" class="btn btn-accent" style="border:none; width:100%; font-size:0.95rem;">Send Enquiry</button>
-            <p class="form-success" id="form-success"><i class="fa-solid fa-circle-check"></i> Thank you! Your enquiry has been noted. We will contact you within 48 hours.</p>
+            <button id="cf-submit-btn" onclick="submitEnquiry()" class="btn btn-accent" style="border:none; width:100%; font-size:0.95rem;">Send Enquiry</button>
+            <p class="form-success" id="form-success"><i class="fa-solid fa-circle-check"></i> Thank you! Your enquiry has been sent directly to contact@sagarmultiservices.co.in. We will contact you within 48 hours.</p>
         </div>
     </div>
 </div>
@@ -1115,7 +1113,7 @@
                 <h4>Standards &amp; Policy</h4>
                 <p>WCAG 2.1 Accessibility Compliant</p>
                 <p>IT Act 2000 &amp; MeitY Aligned</p>
-                <p>BMLP Research Framework</p>
+                <p>Blank Mind Logical Auditor Framework</p>
                 <p style="margin-top:8px;"><a href="https://gem.gov.in" target="_blank">GeM Portal</a></p>
                 <a href="https://amazon.com/author/kakasahebgawali" target="_blank">Amazon Author Page</a>
             </div>
@@ -1175,7 +1173,6 @@
             status:       "Authentic & Verified",
             issuer:       "Kakasaheb Dnyandeo Gawali (Proprietor, Sagar Multiservices)"
         }
-        /* Add new certificate records here */
     };
 
     function verifySagarCertificate() {
@@ -1209,19 +1206,63 @@
         }
     }
 
-    /* Allow Enter key in verification input */
     document.getElementById('certIdInput').addEventListener('keydown', function(e) {
         if (e.key === 'Enter') verifySagarCertificate();
     });
 
-    /* ── CONTACT FORM ── */
-    function submitEnquiry() {
+    /* ── CONTACT FORM INTEGRATION VIA WEB3FORMS (ZOHO MAIL ROUTED) ── */
+    async function submitEnquiry() {
         const name    = document.getElementById('cf-name').value.trim();
         const email   = document.getElementById('cf-email').value.trim();
+        const org     = document.getElementById('cf-org').value.trim();
         const service = document.getElementById('cf-service').value;
         const message = document.getElementById('cf-message').value.trim();
-        if (!name || !email || !message) { alert('Please fill in all required fields.'); return; }
-        document.getElementById('form-success').style.display = 'block';
+        const submitBtn = document.getElementById('cf-submit-btn');
+
+        if (!name || !email || !message) { 
+            alert('Please fill in all required fields.'); 
+            return; 
+        }
+
+        submitBtn.disabled = true;
+        submitBtn.innerText = 'Sending...';
+
+        try {
+            const response = await fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                headers: { 
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify({
+                    access_key: "bd5e0c50-32b0-4592-80ea-3487f9d9c8eb",
+                    name: name,
+                    email: email,
+                    organisation: org || 'N/A',
+                    service_required: service || 'Not specified',
+                    message: message,
+                    subject: `New Website Enquiry from ${name} (${org || 'Sagar Multiservices'})`
+                })
+            });
+
+            const result = await response.json();
+
+            if (result.success) {
+                document.getElementById('form-success').style.display = 'block';
+                document.getElementById('cf-name').value = '';
+                document.getElementById('cf-email').value = '';
+                document.getElementById('cf-org').value = '';
+                document.getElementById('cf-service').value = '';
+                document.getElementById('cf-message').value = '';
+            } else {
+                alert('Submission error: ' + (result.message || 'Please try again.'));
+            }
+        } catch (error) {
+            alert('An error occurred while sending your enquiry. Please check your internet connection.');
+        } finally {
+            submitBtn.disabled = false;
+            submitBtn.innerText = 'Send Enquiry';
+        }
     }
 </script>
 </body>
