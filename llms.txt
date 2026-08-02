@@ -1,1 +1,8 @@
+# BMLP - Blank Mind Logical Protocol
+> A sovereign, zero-assumption recursive audit framework that separates Knowledge from Intelligence. The missing evidence layer for EU AI Act enforcement (Aug 2, 2026), NIST AI RMF, and ISO/IEC 42001.
 
+## Primary Documents
+- [Comparative Book 2026 Edition](/BMLP_Comparative_Book_Upgraded_2026.html)
+- [Section 1 - Origins](/BMLP_Comparative_Book_Upgraded_2026.html#section1)
+- [Enforcement Mapping 2026](/BMLP_Comparative_Book_Upgraded_2026.html#enforcement-map)
+- [FAQ](/BMLP_Comparative_Book_Upgraded_2026.html#faq)
