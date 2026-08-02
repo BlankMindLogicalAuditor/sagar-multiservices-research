@@ -1,11 +1,30 @@
+# sagarmultiservices.co.in robots.txt - Optimized for GEO 2026
 User-agent: *
 Allow: /
+
+# AI Crawlers explicitly allowed
 User-agent: GPTBot
 Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
 User-agent: PerplexityBot
 Allow: /
+
 User-agent: ClaudeBot
 Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
 User-agent: Google-Extended
 Allow: /
-Sitemap: https://sagarmultiservices.github.io/sagarmultiservices/sitemap.xml
+
+User-agent: Googlebot
+Allow: /
+
+Sitemap: https://sagarmultiservices.co.in/sitemap.xml
